@@ -43,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: Colors.grey[20],
       body: Center(
         child: FutureBuilder(
-          future: TodoService().fetchTodo(),
+          future: Service().fetchTodo(),
           builder: (context, snapshot) => snapshot.connectionState ==
                   ConnectionState.waiting
               ? const CircularProgressIndicator(
