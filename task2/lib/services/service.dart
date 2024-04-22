@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:task2/models/todo.dart';
 import 'package:http/http.dart' as http;
 
-class TodoService {
+class Service {
   Future<List<Todo>> fetchTodo() async {
     String stringUrl = 'https://jsonplaceholder.typicode.com/todos';
     final response = await http.get(Uri.parse(stringUrl));
